@@ -1,0 +1,30 @@
+/* Применяет стили ко всем элементам с тегом p */
+p { 
+  /* Размер шрифта */
+  font-size: 24px; 
+  /* Шрифт */
+  font-family: Hack;
+  /* Курсив */
+  font-style: italic;
+  /* Жирность */
+  font-weight: bold;
+  /* Цвет шрифта */
+  color: cornflowerblue;
+  /* Цвет фона */
+  background-color: darkgray;
+}
+
+/* Применение стилей к классам (стили класса перебивают стили тегов) */
+.second_paragraph {
+  font-size: 20px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  color: blueviolet;
+  background-color: orange;
+  /* Ширина элемента */
+  width: 50%; /* процент от родительского элемента */
+  min-height: 20px; /* процент от родительского элемента */
+  padding: 20px 0 0 0; /* внутренний отступ */
+  margin: 40px; /* внешний отступ */
+}
