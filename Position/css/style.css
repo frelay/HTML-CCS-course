@@ -1,0 +1,32 @@
+.t {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.s {
+  width: 50px;
+  height: 50px;
+  background: orange;
+  position: relative; /* Относительное позиционирование сдвигает элемент относительно его обычного положения.*/
+  left: 100px; /* слева отступ 100px */
+  top: 100px; /* сверху отступ 100px */
+}
+
+.a {
+  width: 50px;
+  height: 50px;
+  background: blue;
+  position: absolute; /* Позиционируется относительно родителя, другие элементы его не видят*/
+  left: 200px;
+}
+
+.b {
+  width: 50px;
+  height: 50px;
+  background: green;
+  position: fixed; /*Позиционирует объект точно так же, как absolute, но относительно window, Когда страницу прокручивают, фиксированный элемент остаётся на своём месте и не прокручивается вместе со страницей.*/
+  right: 50px;
+  bottom: 30px;
+}
