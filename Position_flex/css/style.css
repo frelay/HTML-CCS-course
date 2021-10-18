@@ -1,0 +1,54 @@
+.container {
+  border: 2px solid red;
+  min-height: 300px;
+  display: flex;
+  /* Направление оси */
+  flex-direction: row; /*по умолчанию, элементы выстроятся в ряд*/
+  /* flex-direction: row-reverse; элементы выстроятся в ряд в обратном порядке */
+  /* flex-direction: column; элементы выстроятся в колонку */
+  /* flex-direction: column-reverse; элементы выстроятся в колонку в обратном порядке */
+  /* Распределение по строкам */
+  flex-wrap: wrap; /* Элементы будут переноситься на следующую строку при сжатии экрана */
+  /* Распределение по ширине */
+  justify-content: flex-start; /*элементы прижмутся к левому краю*/
+  /* justify-content: flex-end; элементы прижмутся к правому краю */
+  /* justify-content: center; элементы встанут по центру */
+  /* justify-content: space-between;  */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* Выравнивание элементов */
+  align-items: flex-start; /*по умолчанию*/
+  /* align-items: flex-end; выравнивание по нижнему краю */
+  /* align-items: center; выравнивание по центру */
+  /* Строки внутри контейнера */
+  align-content: flex-start;
+  /* align-content: flex-end;
+  align-content: center;
+  align-content: stretch; */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: orangered;
+  margin: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* .h250 {
+  height: 250px;
+}
+
+.h200 {
+  height: 200px;
+}
+
+.h150 {
+  height: 150px;
+} */
+
+.test_item {
+  order: 1; /* Порядок элементов(0 - на своем месте, 1 - в конец) */
+  flex-grow: 1; /* Элемент вырастет по всей ширине */
+}
